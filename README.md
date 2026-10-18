@@ -13,6 +13,8 @@ https://barionleg.github.io/remove-numbers-from-text-tool/gindex.html
 
 <img width="326" height="422" alt="image" src="https://github.com/user-attachments/assets/7086f1b1-d66a-410d-9af1-5f85ed44d3a9" />
 
+___
+___
 
 template from:
 
