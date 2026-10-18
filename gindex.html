@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ტექსტიდან რიცხვების ამოღება (ყველა რიცხვის წაშლა)</title>
+    <meta name="description" content="გამოიყენეთ ეს უფასო ონლაინ ვებ-აპლიკაცია ტექსტიდან რიცხვების წასაშლელად. ის განიხილავს თქვენს მიერ შეყვანილ ტექსტს და ავტომატურად წაშლის 0-დან 9-მდე ყველა ციფრს.">
+
+    <meta name="robots" content="index,follow">
+    <style>
+        .capitalize {
+            text-transform: capitalize;
+        }
+    </style>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="barionleg.png">
+<style id="inline-css" type="text/css">
+body{ color: ; }
+h1, h2, h3, h4, h5, h6, .header { color: ; }
+a{ transition: color .2s; color:  };
+a:hover, a:focus, a:active { color: ; }
+.frow h4{margin:0;}
+</style>
+    <meta property="og:title" content="ტექსტიდან რიცხვების ამოღება (ყველა რიცხვის წაშლა)">
+    <meta property="og:type" content="არტიკლი">
+    <meta property="og:url" content="./">
+    <meta property="og:description" content="გამოიყენეთ ეს უფასო ონლაინ ვებ-აპლიკაცია ტექსტიდან რიცხვების წასაშლელად. ის განიხილავს თქვენს მიერ შეყვანილ ტექსტს და ავტომატურად წაშლის 0-დან 9-მდე ყველა ციფრს.">
+    <meta property="og:site_name" content="ტექსტის ხელსაწყო">
+
+</head>
+
+<body>
+
+    <div class="adthrive-placeholder-header" style="min-height:90px;"></div>
+    <div id="content" class="pw">
+        <h1>ტექსტის რიცხვებისაგან განთავისუფლება (ყველა რიცხვის წაშლა)</h1>
+        <a href="index.html" style="color:#FF0000;"><p>Remove Numbers from Text (page in english)</p></a>		
+        <p>გამოიყენეთ ეს უფასო ინსტრუმენტი ტექსტიდან რიცხვების ონლაინ წასაშლელად. ის გადახედავს თქვენს მიერ შეყვანილ ტექსტს და ავტომატურად წაშლის 0-დან 9-მდე ყველა ციფრს.</p>
+        <p>ეს ინსტრუმენტი ასევე წაშლის წილადურ რიცხვებს, რომელთა შუაში წერტილებია, მაგალითად, 7.5 ან 1.44. აგრეთვე ტექსტიდან წაიშლება <a href="https://ka.wikipedia.org/wiki/მცურავი_წერტილის_არითმეტიკა" target="_blanc" />მცურავ-წერტილოვანი რიცხვები</a>. აგრეთვე, ის წაშლის რიცხვებს დანომრილი სტრიქონების დასაწყისში, რომლებიც იწყება რიცხვით და შემდეგ მოჰყვება წერტილი, <a href="https://aibolem.github.io/db/asia/mps/mps19.html#596" style="blue" target="_blanc" />იხ. ნუმერაციის მაგ.: ჩვენი ონლაინ ვეფხისტყაოსნის გვერდზე</a>.</p>
+
+        <h2>რიცხვების ამოღების ინსტრუმენტი</h2>
+        <p><label for="newText">ჩასვით თქვენი ტექსტი ქვემოთ მოცემულ ველში და შემდეგ დაკლიკეთ <strong>„რიცხვების წაშლა“ </strong> ბატტონს. ავტომატისათვის ნებისმიერი ენა მისასალმებელია!</label></p>
+        <p><textarea id="newText" name="newText" rows="12" cols="36">ჩასვით თქვენი ტექსტი აქანე</textarea></p>
+        <span style="white-space:nowrap;"><input type="button" name="remove-numbers" value="რიცხვების წაშლა" onclick="javascript:removeNumbers()" class="subbtn">
+            <input type="button" name="clearText" id="clearText" value="დარესეტება" class="rstbtn"></span>
+        <span style="white-space:nowrap;"><input type="button" name="copyClip" id="copyClip" value="ბუფერში კოპირება" class="actbtn" data-clipboard-target="#newText">
+            <a href="https://barionleg.github.io/remove-numbers-from-text-tool/index.html" id="downloadFile" class="actbtn lnkbtn" download="barionleg_ის_ტექსტი_რიცხვების_გარეშე.txt">ტექსტის ჩამოტვირთვა</a></span>
+        <p></p>
+        <div id="tempText" name="tempText" rows="7" cols="7" class="leftField capitalize"></div>
+        </form>
+
+        <h2>როგორ ამოვიღო რიცხვები ტექსტიდან?</h2>
+        <p>ტექსტიდან ყველა რიცხვის წასაშლელად, მიჰყევით ამ მარტივ ნაბიჯებს.</p>
+        <ol>
+            <li>ჩასვით თქვენი ტექსტი ქვემოთ მოცემულ ველში.</li>
+            <li>დააჭირეთ ღილაკს რიცხვების წაშლა.</li>
+            <li>აირჩიეთ ბუფერში კოპირება, რათა მიიღოთ თქვენი ახლა უკვე უნომრო ტექსტი.</li>
+            <li>ალტერნატივა, უნომრო ტექსტის მისაღებად დაკლიკეთ ბატტონი "ტექსტის ჩამოტვირთვა".</li>	
+            <li>* (განმარტება ფიფქუს) ჩვენს რესურსზებზე ვიყენებთ კუთხურ გამოთქმებს, მათი პოპულარიზაციისათვის. აქანე ძველი ©იმერული (სიმერული, enligt <a title="弦理論" href="https://ru.wikipedia.org/wiki/Теория_струн" rel="nofollow">©трун</a> & <a title="弦理論" href="https://ka.wikipedia.org/wiki/სიმების_თეორია" rel="nofollow">sim</a> theory, სტრუნებისა და სიმების აქსიომა) სიტყვაა, რომელიც გამიგია სოფელ სიმონეთში (ComPoSARC version: ©YAMÅнÄтი გამ.: სიამონეთი) და რომელსაც შესაძლოა შუმერულსაც უწოდებენ. თუ როგორ და რად თვალი ადევნედ ჩვენს არტიკლებსა და ვებბ კოდებს. </li>	
+            <li>გმადლობთ!</li>
+            <li>ტექსტის რედაქცია: barionleg gen dr ur. ღილი ფოლაქია LACOSTAЯR₾ი I.B.M.l.</li>			
+        </ol>
+
+
+    </div>
+    <div id="ftr">
+        <ul id="fmenu">
+            <li><span id="copyright">©2024 barionleg on github & gitbook </span></li>
+            <li><a title="プライバシーポリシー" href="https://barionleg.github.io/froide/プライバシーポリシー.html" rel="nofollow">Privacy Policy</a> | <a title="利用規約" href="https://barionleg.github.io/froide/利用規約.html" rel="nofollow">Terms of Use</a></li>
+            <li><a href="https://georgien.fr" target="_blanc"><img src="barionleg.png" width="173" height="173" alt="remove-numbers-from-text-tool-at-barionleg" title="web tools"></a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="remove-numbers.js"></script>
+    <script async="" type="text/javascript" src="geo-clipped.js"></script>
+	
+                <a href="https://github.com/barionleg/remove-numbers-from-text-tool/wiki" class="view-on-github" style="position: fixed;bottom: 10px;left: 50%;z-index: 9999;"> <img alt="View on Github" src="https://aibolem.github.io/kml/img/view-on-github.png" title="View on Github" width="164"> </a>
+
+</body>
+
+</html>
